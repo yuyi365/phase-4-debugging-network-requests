@@ -1,3 +1,1 @@
-Rails.application.routes.draw do
-  resources :movies, only: [:index]
-end
+Rails.application.routes.draw { resources :movies, only: %i[index create] }
